@@ -22,3 +22,8 @@ export function addRecipe(recipe: Omit<Recipe, "id" | "createdAt">): Recipe {
     saveRecipes(list);
     return toSave;
 }
+
+export function updateRecipe(id: string, updates: Partial<Recipe>) : void {
+    const next = getRecipes().map(r => (r.id === id ? { ...r, ...updates } : r ));
+    saveRecipes(next);
+}
