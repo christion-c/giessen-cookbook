@@ -27,3 +27,8 @@ export function updateRecipe(id: string, updates: Partial<Recipe>) : void {
     const next = getRecipes().map(r => (r.id === id ? { ...r, ...updates } : r ));
     saveRecipes(next);
 }
+
+export function deleteRecipe(id: string): void {
+    const next = getRecipes().filter(r => r.id !== id);
+    saveRecipes(next);
+}
