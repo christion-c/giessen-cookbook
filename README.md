@@ -1,69 +1,113 @@
-# React + TypeScript + Vite
+# ADHD-Friendly Cookbook
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun, accessible, and low-stress cookbook designed for people with ADHD, executive dysfunction, or anyone who struggles with traditional cooking instructions. This project focuses on making cooking engaging, easy to follow, and enjoyable through clear steps, visual structure, and supportive design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
+- [About](#about)
+- [Why This Cookbook Exists](#why-this-cookbook-exists)
+- [Features](#features)
+- [Who It's For](#who-its-for)
+- [Cooking Approach](#cooking-approach)
+- [Recipe Format](#recipe-format)
+- [Example Recipe Layout](#example-recipe-layout)
+- [Project Structure](#project-structure)
+- [Future Additions](#future-additions)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## About
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+The ADHD-Friendly Cookbook is built to remove stress, friction, and monotony from the cooking process. Many traditional recipes assume the reader has perfect focus, uninterrupted time, and strong executive function. This cookbook embraces the opposite: real life, short attention spans, sensory needs, and the desire for cooking to actually feel fun.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Why This Cookbook Exists
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+People with ADHD often struggle with:
+- Long recipe paragraphs  
+- Poorly organized ingredient lists  
+- Confusing prep steps  
+- Time-blindness  
+- Sensory overload  
+- Decision paralysis  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+This cookbook solves those issues through structure, simplicity, and encouragement. It breaks cooking into digestible steps, provides optional shortcuts, and keeps instructions clear and engaging.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## Features
+
+- Step-by-step, distraction-resistant recipes  
+- Clear labeling (difficulty, time, sensory warnings, noise level, required focus time)  
+- Color-coded sections for fast scanning  
+- “If you forget something…” safety notes  
+- “Brain breaks” during long cooking steps  
+- Options for low-spoon days  
+- Visual timers and time estimates  
+- Ingredient substitution suggestions  
+- Encouraging language without being condescending  
+
+---
+
+## Who It's For
+
+- People with ADHD  
+- Neurodivergent cooks  
+- Beginners overwhelmed by traditional recipes  
+- Anyone who wants a friendlier, more approachable way to cook  
+
+---
+
+## Cooking Approach
+
+The cookbook uses:
+- **Short sentences**  
+- **Minimal text per step**  
+- **Separate prep steps and active steps**  
+- **Checklists**  
+- **Pre-highlighted “things you must not forget”**  
+- **Built-in fallback options**  
+- **Low-judgment tone**  
+
+It aims to make cooking feel like a collaborative activity instead of a chore.
+
+---
+
+## Recipe Format
+
+Each recipe follows this structure:
+
+1. **At a Glance**
+   - Time  
+   - Difficulty  
+   - Tools needed  
+   - Sensory warnings  
+   - Executive function demands  
+
+2. **Ingredients**
+   - Clear bullet list  
+   - Optional substitutions  
+   - Optional shortcuts (pre-chopped veggies, frozen ingredients, etc.)
+
+3. **Prep Zone**
+   - Things to do *before* cooking starts  
+   - Checkboxes for prepping ingredients  
+   - Short and direct instructions  
+
+4. **Cook Zone**
+   - Step-by-step active instructions  
+   - Minimal text per step  
+   - Built-in timers  
+   - Panic recovery notes  
+
+5. **Finishing Touches**
+   - Optional garnishes  
+   - Quick taste-check guide  
+   - Storage notes  
+
+---
